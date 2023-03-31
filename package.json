@@ -1,0 +1,25 @@
+{
+  "name": "vscode-deluge-extension",
+  "displayName": "vscode-deluge-extension",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.77.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "deluge",
+      "aliases": ["deluge", "deluge"],
+      "extensions": [".deluge",".zdeluge"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "deluge",
+      "scopeName": "source.deluge",
+      "path": "./syntaxes/deluge.tmLanguage.json"
+    }]
+  }
+}
